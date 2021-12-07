@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH << File.expand_path(File.dirname(__FILE__) + '/../lib')
+require 'brygg'
+
+def banner
+  puts "brygg v#{Brygg::VERSION}."
+end
+
+banner
+
+Brygg::CLI.new.select_search
